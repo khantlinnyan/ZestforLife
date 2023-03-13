@@ -5,12 +5,12 @@ import { Navtitle } from "./Navbartitle";
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
   return (
-    <nav className="w-full shadow sticky top-0 overflow-hidden bg-white opacity-90">
+    <nav className="w-full shadow sticky top-0 overflow-hidden bg-white opacity-90 z-20">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link to={'/'}>
-              <h2 className="text-xl md:text-3xl font-bold text-green">
+              <h2 className="text-xl md:text-3xl font-bold text-[#007E46]">
                 ZestforLife
               </h2>
             </Link>
@@ -61,7 +61,7 @@ export default function Navbar() {
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               {Navtitle.map((i) => {
                 return (
-                  <li className="text-grey-800 hover:text-green-800 text-center" key={i.id}>
+                  <li className="text-[#007E46] text-center" key={i.id}>
                     <Link className="text-base md:mr-5 md:text-lg" to={i.to}>
                       {i.name}
                     </Link>

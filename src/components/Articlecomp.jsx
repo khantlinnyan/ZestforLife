@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Article = () => {
+const Articlecomp = () => {
   return (
 
     <div className='flex flex-col items-center'>
@@ -8,7 +8,7 @@ const Article = () => {
             <h1 className='text-4xl font-bold text-[#013B52]'>Articles</h1>
             <div className='bg-[#013B52] w-[150px] h-1'></div>
         </div>
-        <div class="p-10 grid grid grid-rows-4 grid-cols-1 md:grid-rows-2 md:grid-cols-2 gap-x-[70px]">  
+        <div class="p-10 grid grid grid-rows-4 grid-cols-1 md:grid-rows-2 md:grid-cols-2 gap-x-[70px] lg:grid-rows-2 lg:grid-cols-3">  
             <div class="max-w-[400px] my-[15px] md:my-[30px] rounded overflow-hidden shadow-lg">
                 <img class="w-full" src="/mountain.jpg" alt="Mountain"/>
                 <div class="px-6 py-4">
@@ -73,4 +73,4 @@ const Article = () => {
   )
 }
 
-export default Article
+export default Articlecomp
