@@ -5,7 +5,7 @@ import { Navtitle } from "./Navbartitle";
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
   return (
-    <nav className="w-full bg-white shadow">
+    <nav className="w-full shadow sticky top-0 overflow-hidden bg-white opacity-90">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -62,7 +62,7 @@ export default function Navbar() {
               {Navtitle.map((i) => {
                 return (
                   <li className="text-grey-800 hover:text-green-800 text-center" key={i.id}>
-                    <Link className="text-base md:text-lg" to={i.to}>
+                    <Link className="text-base md:mr-5 md:text-lg" to={i.to}>
                       {i.name}
                     </Link>
                   </li>
