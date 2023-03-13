@@ -1,7 +1,6 @@
 import React from 'react'
 import pic1 from '../assets/pic1.png'
 import About from './About'
-import Article from './Articlecomp'
 
 const Section = () => {
   return (
@@ -12,11 +11,11 @@ const Section = () => {
               <p className=' text-[#013B52] text-center text-sm md:text-left md:text-[15px] lg:text-base'>We connect those suffer from metal health porblems to <br/>
               effective help-quickly and confidentially to <br/>
               everyone living in Myanmar.</p>
-              <div className='lg:justify-start md:items-start md:flex-col md:space-y-3 md:space-x-0 items-left lg:items-center lg:flex-row lg:space-y-0 lg:space-x-7 space-x-7 flex space-x-2 justify-center'>
+              <div className='lg:justify-start md:items-start md:flex-col md:space-y-3 md:space-x-0 items-left lg:items-center lg:flex-row lg:space-y-0 lg:space-x-7  flex space-x-2 justify-center'>
                   <button className='border-2 border-[#007E46] 
-                  rounded-full text-sm px-3 py-2 text-[#007E46] font-semibold px-5 lg:py-3 text-sm xl:px-6 xl:py-3 xl:text-base'>Get support</button>
+                  rounded-full text-sm py-2 text-[#007E46] font-semibold px-5 lg:py-3  xl:px-6 xl:py-3 xl:text-base'>Get support</button>
                   <button className='border-2 border-[#013B52] 
-                  rounded-full text-sm px-3 py-2 text-[#013B52] font-semibold px-8 lg:py-3 text-sm xl:px-9 xl:py-3 xl:text-base'>About us</button>
+                  rounded-full text-sm py-2 text-[#013B52] font-semibold px-8 lg:py-3  xl:px-9 xl:py-3 xl:text-base'>About us</button>
               </div>
           </div>
           <div className='flex justify-center'>

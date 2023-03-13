@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const Articlecomp = () => {
-
   const [fetchData, setFetchData] = useState([]);
   const dataFetch = async () => {
     const { data, error } = await supabase.from("articles").select("*");
@@ -23,7 +22,7 @@ const Articlecomp = () => {
         <h1 className="text-4xl font-bold text-[#007E46]">Articles</h1>
         <div className="bg-[#013B52] w-[150px] h-1"></div>
       </div>
-      <div className="p-10 grid grid grid-rows-4 grid-cols-1 md:grid-rows-2 md:grid-cols-2 gap-x-[70px] lg:grid-row-2 lg:grid-cols-3">
+      <div className="p-10 grid grid-rows-4 grid-cols-1 md:grid-rows-2 md:grid-cols-2 gap-x-[70px] lg:grid-row-2 lg:grid-cols-3">
         {fetchData.map((currentData) => {
           return (
             <div
@@ -40,12 +39,12 @@ const Articlecomp = () => {
                   {currentData.title}
                 </div>
                 <button className="bg-[#007E46] py-2 px-4 text-sm md:my-2 md:text-lg my-4 rounded-lg text-white">
-                  <Link to={"/articles/"+currentData.id}>Read</Link>
+                  <Link to={"/articles/" + currentData.id}>Read</Link>
                 </button>
               </div>
 
               <div className="px-6 pt-3 pb-2">
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 text-[#013B52] mb-2">
+                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2  mb-2">
                   {`#${currentData.category}`}
                 </span>
               </div>
