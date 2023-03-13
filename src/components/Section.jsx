@@ -1,7 +1,7 @@
 import React from 'react'
 import pic1 from '../assets/pic1.png'
 import About from './About'
-import Article from './Article'
+import Article from './Articlecomp'
 
 const Section = () => {
   return (
@@ -24,7 +24,6 @@ const Section = () => {
           </div>
       </div>
       <div className='h-[1.5px] w-full bg-gray-300'></div>
-      <Article></Article>
       <About></About>
     </div>
   )
