@@ -2,6 +2,7 @@ import React from 'react'
 import Pic from '../assets/webPic3.jpg'
 import Fade from 'react-reveal/Fade';
 import Bounce from 'react-reveal/Bounce';
+import { Link } from 'react-router-dom';
 
 
 
@@ -18,7 +19,7 @@ const Toreadarticles = () => {
             <h2 className='text-[#013B52] font-medium text-center md:text-left text-[12px] xl:text-sm'>We provide articles about mental health and topics related to it. They can offer information, tips, and insights
             on various mental health issues and wellness practices to you. They serve as a valueable resource of anyone looking to improve their mental health well being.</h2>
             <div>
-              <button className='bg-[#013B52] hover:bg-green-500 duration-500 px-4 py-3 md:px-6 md:py-3 text-sm md:text-ls my-4 rounded-full text-white'>Start Reading</button>
+              <Link to='./articles' className='bg-[#013B52] hover:bg-green-500 duration-500 px-4 py-3 md:px-6 md:py-3 text-sm md:text-ls my-4 rounded-full text-white'>Start Reading</Link>
             </div>
           </div>
         </Bounce>

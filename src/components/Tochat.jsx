@@ -2,6 +2,7 @@ import React from 'react'
 import webPic from '../assets/webPic1.jpg'
 import Fade from 'react-reveal/Fade';
 import Bounce from 'react-reveal/Bounce';
+import { Link } from 'react-router-dom';
 
 
 
@@ -18,7 +19,7 @@ const About = () => {
                <li>In this chatting room, you can't scroll up to the previous message: this happened for all of our users' pravicies. </li>
                </ul>
                <div>
-                <button className='bg-[#013B52] hover:bg-green-500 duration-500 px-4 py-3 md:px-6 md:py-3 text-sm xl:text-ls my-4 rounded-full text-white'>Start Chatting </button>
+                <Link to='/chat' className='bg-[#013B52] hover:bg-green-500 duration-500 px-4 py-3 md:px-6 md:py-3 text-sm xl:text-ls my-4 rounded-full text-white'>Start Chatting </Link>
                 </div>
             </div>
 
