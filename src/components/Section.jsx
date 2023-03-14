@@ -29,6 +29,7 @@ const Section = () => {
       </div>
       <div className='h-[1.5px] w-full bg-gray-300'></div>
       <Toreadarticles></Toreadarticles>
+      <div className='h-[1.5px] w-full bg-gray-300'></div>
       <About></About>
     </div>
   )

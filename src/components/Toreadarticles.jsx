@@ -10,7 +10,7 @@ const Toreadarticles = () => {
     
       <div className='flex flex-col md:flex-row justify-center items-center  '>
         <Fade left>
-            <img src={Pic} alt="" className='w-[500px]  md:w-[500px] xl:w-[700px]' />
+            <img src={Pic} alt="" className='w-[500px]  md:w-[550px] xl:w-[800px]' />
         </Fade>
         <Bounce right cascade>
           <div className='flex flex-col space-y-4 justify-center items-center md:items-start'>
