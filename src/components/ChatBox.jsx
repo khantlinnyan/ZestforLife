@@ -35,7 +35,7 @@ const ChatBox = () => {
   }, [messageText]); 
   return( 
     <> 
-        <div className="mb-10 lg:px-40"> 
+        <div className=" md:px-10 py-8 lg:px-40 bg-green-200 "> 
           {messageText.map((i) => { 
             return ( 
               <div className="w-full mt-3 bg-gray-100 shadow rounded-md p-2 flex align-middle" id="message" key={i.id} ref={messageRef}> 

@@ -4,6 +4,8 @@ import About from './About'
 import Toreadarticles from './Toreadarticles'
 import Fade from 'react-reveal/Fade';
 import Bounce from 'react-reveal/Bounce';
+import Checking from './Checking';
+import Tochat from './Tochat';
 
 const Section = () => {
   return (
@@ -27,6 +29,10 @@ const Section = () => {
               <img className='max-w-[350px] md:max-w-[500px] lg:max-w-[550px] xl:max-w-[600px]' src={pic1} alt="Chatting_image" />
           </Fade>
       </div>
+      <div className='h-[1.5px] w-full bg-gray-300'></div>
+      <Checking></Checking>
+      <div className='h-[1.5px] w-full bg-gray-300'></div>
+      <Tochat></Tochat>
       <div className='h-[1.5px] w-full bg-gray-300'></div>
       <Toreadarticles></Toreadarticles>
       <div className='h-[1.5px] w-full bg-gray-300'></div>

@@ -10,7 +10,7 @@ export default function Navbar() {
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link to={'/'}>
-              <h2 className="text-xl md:text-3xl font-bold text-[#007E46]">
+              <h2 className="text-xl md:text-3xl font-bold text-green-500">
                 ZestforLife
               </h2>
             </Link>
@@ -61,8 +61,8 @@ export default function Navbar() {
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               {Navtitle.map((i) => {
                 return (
-                  <li className="text-[#007E46] text-center" key={i.id}>
-                    <Link className="text-base md:mr-5 md:text-lg" to={i.to}>
+                  <li className="text-[#013B52] text-center hover:text-green-500 " key={i.id}>
+                    <Link className="text-base md:mr-5 font-semibold md:text-lg" to={i.to}>
                       {i.name}
                     </Link>
                   </li>
