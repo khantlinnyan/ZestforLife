@@ -1,6 +1,4 @@
 import React from "react";
-import GetSupportcomp from "../components/GetSupportcomp";
-import Questions from "../components/Questions";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
@@ -48,7 +46,6 @@ const GetSupport = () => {
           </div>
         )}
         
-        {/* <h2>Result - {location.state.result}</h2> */}
         <h3></h3>
       </div>
     </div>
