@@ -6,7 +6,7 @@ import Bounce from 'react-reveal/Bounce';
 const Checking = () => {
   return (
     <div className='flex flex-col md:flex-row justify-center items-center md:mx-6 '>
-      <Fade left>
+        <Fade left>
             <img src={Pic} alt="" className='w-[400px]  xl:w-[800px]' />
         </Fade>
         <Bounce right cascade>

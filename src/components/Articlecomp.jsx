@@ -37,7 +37,7 @@ const Articlecomp = () => {
                 <div className=" min-h-[50px] lg:min-h-[40px] text-[#013B52] font-bold lg:text-center text-base md:text-xl mb-2 ">
                   {currentData.title}
                 </div>
-                <button className="bg-green-500 z-10 py-1 px-5 text-sm md:my-2 md:text-lg my-1 md:my-4 rounded-md text-white">
+                <button className="bg-[#013B52] duration-500 hover:bg-green-500 z-10 py-1 px-5 text-sm md:my-2 md:text-lg my-1 md:my-4 rounded-md text-white">
                   <Link to={"/articles/"+currentData.id}>Read</Link>
                 </button>
               </div>

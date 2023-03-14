@@ -30,7 +30,7 @@ const GetSupport = () => {
                 </p>
                 <Link
                   to="/getsupport/mentalcheck"
-                  className="text-blue-800 under mt-4 text-lg"
+                  className="text-green-500 under mt-4 text-lg"
                 >
                   Click here
                 </Link>
@@ -43,7 +43,7 @@ const GetSupport = () => {
               </p>
               <Link
                 to="/getsupport/mentalcheck"
-                className="text-blue-800 block under mt-4 text-lg"
+                className="text-green-500 block under mt-4 text-lg"
               >
                 Click here
               </Link>
