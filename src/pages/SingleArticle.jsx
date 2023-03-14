@@ -15,7 +15,6 @@ const SingleArticle = () => {
     if (error) {
       setAllData("Could not connect");
     }
-    console.log(data);
     setAllData(data);
   };
   useEffect(() => {
@@ -25,7 +24,7 @@ const SingleArticle = () => {
     <div className="mb-10">
       {allData.map((data) => {
         return (
-          <div className="px-7 mt-3 font-semibold text-gray-70">
+          <div className="px-7 mt-3 font-semibold text-gray-70" key={data.id}>
           <img className="mt-3 lg:px-32 md:px-16 rounded-md" src={data.img}/>
             
             <div className="mt-5 lg:px-32 md:px-16">

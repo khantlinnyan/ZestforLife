@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const Articlecomp = () => {
-
   const [fetchData, setFetchData] = useState([]);
   const dataFetch = async () => {
     const { data, error } = await supabase.from("articles").select("*");
@@ -22,7 +21,7 @@ const Articlecomp = () => {
       <div className="flex flex-col items-center space-y-2 mt-6">
         <h1 className="text-4xl font-bold text-[#007E46]">Articles</h1>
       </div>
-      <div className="p-10 grid grid grid-rows-4 grid-cols-1 md:grid-rows-2 md:grid-cols-2 gap-x-[70px] lg:grid-row-2 lg:grid-cols-3">
+      <div className="p-10 grid grid-rows-4 grid-cols-1 md:grid-rows-2 md:grid-cols-2 gap-x-[70px] lg:grid-row-2 lg:grid-cols-3">
         {fetchData.map((currentData) => {
           return (
             <div
