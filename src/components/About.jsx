@@ -7,7 +7,7 @@ import Bounce from 'react-reveal/Bounce';
 
 const About = () => {
   return (
-        <div className='flex flex-col md:flex-row justify-center items-center md:mx-2 '>
+        <div className='flex flex-col md:flex-row justify-center items-center md:mx-2 ' id='aboutus'>
           
           <Bounce left cascade>
             <div className='xl:max-w-[400px] md:max-w-[300px] flex flex-col space-y-4 justify-center items-center md:items-start'>

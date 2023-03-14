@@ -6,6 +6,7 @@ import Fade from 'react-reveal/Fade';
 import Bounce from 'react-reveal/Bounce';
 import Checking from './Checking';
 import Tochat from './Tochat';
+import { Link } from 'react-router-dom';
 
 const Section = () => {
   return (
@@ -18,8 +19,8 @@ const Section = () => {
                 effective help-quickly and confidentially to <br/>
                 everyone living in Myanmar.</p>
                 <div className='lg:justify-start md:items-start md:flex-col md:space-y-3 md:space-x-0 items-left lg:items-center lg:flex-row lg:space-y-0 lg:space-x-7 space-x-7 flex space-x-2 justify-center'>
-                    <button className='border-2 border-[#013B52] 
-                    rounded-full text-sm px-3 py-2 text-[#013B52] font-semibold px-5 lg:py-3 text-sm xl:px-6 xl:py-3 xl:text-base'>Get support</button>
+                    <Link to='/getsupport' className='border-2 border-[#013B52] 
+                    rounded-full text-sm px-3 py-2 text-[#013B52] font-semibold px-5 lg:py-3 text-sm xl:px-6 xl:py-3 xl:text-base'>Get support</Link>
                 </div>
             </div>
           </Bounce>
