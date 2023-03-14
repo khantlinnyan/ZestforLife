@@ -68,7 +68,7 @@ const Questions = () => {
         "သင်ဟာ အချိန်ဆွဲတာမျိုးမလုပ်တော့ဘဲ ချက်ချင်း စိတ်ပိုင်းဆိုင်ရာကုထုံးတွေရဲ့ အကူအညီကိုယူရမှာဖြစ်ပါတယ်၊ အကယ်၍သာ ကိုယ့်ရဲ့ Depression က ကျမလာဘူးဆိုရင်တော့ Mental health specialist တွေနဲ့ တိုင်ပင်ပြီးတော့ ဆေးဝါးအကူအညီနဲ့ အကောင်းဆုံးလုပ်ဆောင်ရမှာပဲဖြစ်ပါတယ်";
       color = "#EB5353";
       textColor = "#FFFFFF";
-      titleColor = "FFFFFF";
+      titleColor = "#FFFFFF";
       error = null;
     }
 

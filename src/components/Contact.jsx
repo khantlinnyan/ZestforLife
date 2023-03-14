@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="">
+    <div className="mb-16">
       <h1 className="text-lg font-semibold mb-2 text-green-500">
         Mental Health Services
       </h1>
