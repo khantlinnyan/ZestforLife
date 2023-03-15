@@ -1,7 +1,5 @@
 import React from 'react'
 import webPic from '../assets/webPic1.jpg'
-import Fade from 'react-reveal/Fade';
-import Bounce from 'react-reveal/Bounce';
 import { Link } from 'react-router-dom';
 
 
