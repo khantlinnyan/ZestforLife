@@ -18,21 +18,7 @@ const Loader = () => {
 
       >
 
-        <circle
-
-          className="opacity-25"
-
-          cx="12"
-
-          cy="12"
-
-          r="10"
-
-          stroke="currentColor"
-
-          strokeWidth="4"
-
-        ></circle>
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
 
         <path
 
