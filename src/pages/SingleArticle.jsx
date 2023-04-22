@@ -6,7 +6,6 @@ import supabase from "../config/superbaseClient";
 
 import { useState, useEffect } from "react";
 
-import Loader from "../components/Loader";
 
 const SingleArticle = () => {
 
