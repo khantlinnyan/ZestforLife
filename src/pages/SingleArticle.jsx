@@ -1,5 +1,7 @@
 import React from "react";
-import Loader from "../components/Loader;
+
+import Loader from "../components/Loader";
+
 import { useParams } from "react-router-dom";
 
 import supabase from "../config/superbaseClient";
