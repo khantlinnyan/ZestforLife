@@ -63,7 +63,6 @@ const Loader = () => {
 
 };
 
-export default Loader;
 const SingleArticle = () => {
 
   const [allData, setAllData] = useState([]);
