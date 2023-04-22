@@ -1,59 +1,89 @@
 import React from "react";
+
 import { Link } from "react-router-dom";
+
 import { useLocation } from "react-router-dom";
+
 import Contact from "../components/Contact";
 
 const GetSupport = () => {
+
   const location = useLocation();
 
   return (
-    <>
-      <div className="py-2 px-4 lg:px-40 mt-3">
-        <div>
+
+    <div className="container mx-auto px-4 lg:px-40 py-8">
+
+      <div className="max-w-2xl mx-auto">
+
+        <div className="mb-8">
+
           {location.state ? (
-            <>
-              <div
-                style={{
-                  background: location.state.color,
-                  color: location.state.titleColor,
-                }}
-                className="py-2 px-4 rounded-lg text-xl"
-              >
-                Result
-                <h1 style={{ color: location.state.textColor }}>
-                  {location.state.result}
-                </h1>
-              </div>
-              <div className="mt-5 ">
-                <p className="inline text-lg text-gray-700">
-                  Mental health check again -{" "}
-                </p>
-                <Link
-                  to="/getsupport/mentalcheck"
-                  className="text-green-500 under mt-4 text-lg"
-                >
-                  Click here
-                </Link>
-              </div>
-            </>
-          ) : (
-            <div className="mt-2 bg-gray-100 px-4 py-2 mb-10 rounded">
-            <p className="inline text-lg font-semibold text-gray-700">
-                Mental health check
+
+            <div
+
+              className={`bg-${location.state.color}-500 text-${location.state.titleColor}-900 py-4 px-6 rounded-lg`}
+
+            >
+
+              <h2 className="text-2xl font-bold mb-2">Result</h2>
+
+              <p className={`text-xl font-bold mb-4 text-${location.state.textColor}-900`}>
+
+                {location.state.result}
+
               </p>
-              <Link
-                to="/getsupport/mentalcheck"
-                className="text-green-500 block under mt-4 text-lg"
-              >
-                Click here
-              </Link>
+
             </div>
+
+          ) : (
+
+            <div className="bg-gray-200 py-4 px-6 rounded-lg">
+
+              <h2 className="text-2xl font-bold mb-2">Mental Health Check</h2>
+
+              <p className="text-xl mb-4">
+
+                Take a quick mental health check and get support when you need
+
+                it.
+
+              </p>
+
+            </div>
+
           )}
+
         </div>
-        <Contact/>
+
+        <div className="flex justify-center">
+
+          <Link
+
+            to="/getsupport/mentalcheck"
+
+            className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full transition-all duration-200"
+
+          >
+
+            {location.state ? "Take Again" : "Start Now"}
+
+          </Link>
+
+        </div>
+
+        <div className="mt-8">
+
+          <Contact />
+
+        </div>
+
       </div>
-    </>
+
+    </div>
+
   );
+
 };
 
 export default GetSupport;
