@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import { Link } from "react-router-dom";
 
-import Navtitle from "./components/Navtitle";
+import { Navtitle } from "./Navbartitle";
 
 export default function Navbar() {
 
